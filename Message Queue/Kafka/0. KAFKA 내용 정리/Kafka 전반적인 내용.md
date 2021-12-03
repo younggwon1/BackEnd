@@ -1,4 +1,6 @@
-# Kafka
+# Kafka 전반적인 내용
+
+[Kafka DOCUMENTATION](https://kafka.apache.org/documentation/#gettingStarted)
 
 [전반적인 Kafka 내용](https://www.popit.kr/author/peter5236)
 
