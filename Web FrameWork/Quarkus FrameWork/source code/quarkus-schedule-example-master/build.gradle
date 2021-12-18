@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id 'io.quarkus'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
+    implementation 'io.quarkus:quarkus-spring-scheduled'
+    implementation 'io.quarkus:quarkus-spring-data-jpa'
+    implementation 'io.quarkus:quarkus-spring-boot-properties'
+    implementation 'io.quarkus:quarkus-arc'
+    implementation 'io.quarkus:quarkus-resteasy'
+    testImplementation 'io.quarkus:quarkus-junit5'
+    testImplementation 'io.rest-assured:rest-assured'
+    
+    //mysql
+    implementation 'io.quarkus:quarkus-jdbc-mysql'
+    compile 'io.quarkus:quarkus-narayana-jta'
+    
+    // modelmapper
+    compile 'org.modelmapper:modelmapper:2.3.4'
+    
+    //jsoup
+    implementation 'org.jsoup:jsoup:1.13.1'
+    
+    //log4j2
+    compile 'org.jboss.logmanager:log4j2-jboss-logmanager'
+    
+    //lombok
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+	annotationProcessor 'org.projectlombok:lombok:1.18.20'
+}
+
+group 'kr.co.example'
+version '1.0.0-SNAPSHOT'
+
+quarkusBuild {
+    nativeArgs {
+        containerBuild = true 
+        buildImage = "quay.io/quarkus/ubi-quarkus-native-image:21.0.0-java11" 
+    }
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-parameters'
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
