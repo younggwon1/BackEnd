@@ -1,1 +1,0 @@
-[Kafka 연동하기](https://victorydntmd.tistory.com/m/348)
