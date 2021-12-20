@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: board-backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/BBS?autoReconnect=true
+    username: root
+    password: mysql1@3$
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    user:
+      name: admin
+      password: admin
+      
+
+server:
+  port: 8088
+  servlet:
+    context-path: /board
+  tomcat:
+    max-connections: 500
+    max-threads: 400
+    min-spare-threads: 300
+    accept-count: 100 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    cache-enabled: true
+    lazy-loading-enabled: true
+    multiple-result-sets-enabled: true
+    use-column-label: true
+    default-statement-timeout: 65000
+    map-underscore-to-camel-case: true
+ 
+logging:
+  level:
+    board: debug
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %-30.-30F : %msg%n'
+  response:
+    length: 50

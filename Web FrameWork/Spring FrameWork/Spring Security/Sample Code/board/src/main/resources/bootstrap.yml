@@ -1,0 +1,24 @@
+#spring:
+#  application:
+#    name: board-backend
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/BBS?autoReconnect=true
+#    username: root
+#    password: mysql1@3$
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    
+#    
+#server:
+#  port: 8092
+#  servlet:
+#    context-path: /board
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: refresh
+#
+#      
+#
+#mybatis:
+#    mapper-locations: classpath:mapper/**/**.xml

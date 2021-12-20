@@ -1,0 +1,107 @@
+{"properties": [
+  {
+    "name": "spring.board-master.data-source.jdbc-url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.board-master.data-source.jdbc-url'"
+  },
+  {
+    "name": "spring.board-slave.data-source.jdbc-url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.board-slave.data-source.jdbc-url'"
+  },
+  {
+    "name": "spring.board-master.data-source.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.board-master.data-source.username'"
+  },
+  {
+    "name": "spring.board-master.data-source.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.board-master.data-source.password'"
+  },
+  {
+    "name": "spring.board-master.data-source.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.board-master.data-source.driver-class-name'"
+  },
+  {
+    "name": "spring.board-master.session.jdbc.initialize-schema",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.board-master.session.jdbc.initialize-schema'"
+  },
+  {
+    "name": "spring.board-slave.data-source.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.board-slave.data-source.username'"
+  },
+  {
+    "name": "spring.board-slave.data-source.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.board-slave.data-source.password'"
+  },
+  {
+    "name": "spring.board-slave.data-source.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.board-slave.data-source.driver-class-name'"
+  },
+  {
+    "name": "spring.board-slave.session.jdbc.initialize-schema",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.board-slave.session.jdbc.initialize-schema'"
+  },
+  {
+    "name": "logging.response.length",
+    "type": "java.lang.String",
+    "description": "A description for 'logging.response.length'"
+  },
+  {
+    "name": "spring.member-master.data-source.jdbc-url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.member-master.data-source.jdbc-url'"
+  },
+  {
+    "name": "spring.member-master.data-source.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.member-master.data-source.username'"
+  },
+  {
+    "name": "spring.member-master.data-source.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.member-master.data-source.password'"
+  },
+  {
+    "name": "spring.member-master.data-source.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.member-master.data-source.driver-class-name'"
+  },
+  {
+    "name": "spring.member-master.session.jdbc.initialize-schema",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.member-master.session.jdbc.initialize-schema'"
+  },
+  {
+    "name": "spring.member-slave.data-source.jdbc-url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.member-slave.data-source.jdbc-url'"
+  },
+  {
+    "name": "spring.member-slave.data-source.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.member-slave.data-source.username'"
+  },
+  {
+    "name": "spring.member-slave.data-source.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.member-slave.data-source.password'"
+  },
+  {
+    "name": "spring.member-slave.data-source.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.member-slave.data-source.driver-class-name'"
+  },
+  {
+    "name": "spring.member-slave.session.jdbc.initialize-schema",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.member-slave.session.jdbc.initialize-schema'"
+  }
+]}
