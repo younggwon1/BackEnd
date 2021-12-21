@@ -114,3 +114,10 @@ public class HomeController implements WebMvcConfigurer{
 }
 ````
 
+
+
+#### 그외 각종 설정들에 대한 자료
+
+[[Spring Boot] security를 사용한 접근제어](https://sarc.io/index.php/java/1857-spring-boot-security)
+
+[[Spring] Spring Security - 낮코밤코](https://owin2828.github.io/devlog/2019/12/30/spring-18.html)
