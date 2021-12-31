@@ -121,3 +121,18 @@ public class HomeController implements WebMvcConfigurer{
 [[Spring Boot] security를 사용한 접근제어](https://sarc.io/index.php/java/1857-spring-boot-security)
 
 [[Spring] Spring Security - 낮코밤코](https://owin2828.github.io/devlog/2019/12/30/spring-18.html)
+
+**- .requiresSecure()을 추가하면 선택한 URL에 HTTPS를 적용할 수 있다.**
+**- .requiresInsecure()을 추가하면 항상 HTTP로 적용이 된다.**
+
+````
+http.requiresChannel().antMatchers("/").requiresSecure();
+
+혹은
+
+http.authorizeRequests()
+    .antMatchers("/path/**").access("hasIpAddress('123.123.123.0/24')
+    .and()
+    .requiresChannel().antMatchers("/path/**").requiresSecure();
+````
+
