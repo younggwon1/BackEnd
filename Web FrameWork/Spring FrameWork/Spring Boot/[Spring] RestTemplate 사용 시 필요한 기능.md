@@ -2,7 +2,7 @@
 
 #### restTemplate 설정 메서드
 
-````
+````java
     // restTemplate 설정 메서드
     public RestTemplate restTemplateConfig() {
         HttpComponentsClientHttpRequestFactory factory = new HttpComponentsClientHttpRequestFactory();
@@ -25,7 +25,7 @@
 
 #### SSL이 적용된 RestTemplate 메서드 구현
 
-````
+````java
     // SSL이 적용된 RestTemplate 메서드 구현
     public RestTemplate createSslRestTemplate() throws KeyManagementException, NoSuchAlgorithmException, KeyStoreException {
         TrustStrategy acceptingTrustStrategy = (X509Certificate[] chain, String authType) -> true;
@@ -50,7 +50,7 @@
 
 #### HttpHeader 메서드 설정
 
-````
+````java
     // HttpHeader 메서드 설정
     public HttpHeaders createHttpHeaders() {
         // create headers
@@ -64,23 +64,4 @@
     }
 ````
 
-
-
-#### Object -> Json으로 변경
-
-````
-    // Object -> Json으로 변경
-    public String getJsonParam(ExampleDto exampleDto) {
-        String jsonParam = "";
-        try {
-            jsonParam = objectMapper.writeValueAsString(exampleDto);
-            return jsonParam;
-        } catch (JsonProcessingException e) {
-            log.error("ConvertToJson Error Occured. {}", e);
-            throw new CcpApiException(
-                    ccpMessage.getArgumentsMessagetype("cmm.unknown.err")
-                    , ccpMessage.getArgumentsMessage("cmm.unknown.err"));
-        }
-    }
-````
 
