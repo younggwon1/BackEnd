@@ -1,0 +1,12 @@
+server:
+  port: 10002
+spring:
+  application:
+    name: grpc-client
+grpc:
+  client:
+    local-grpc-server:
+      address: 'static://127.0.0.1:9898'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext

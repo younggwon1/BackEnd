@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: boilerplate
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    jdbc-url: jdbc:mysql://localhost:3306/boilerplate?useSSL=false&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&useSSL=false
+  flyway:
+    enabled: true #flyway를 사용하겠다는 설정으로 기본값은 true입니다.
+    baseline-on-migrate: true # flyway는 버전 정보를 flyway_shcema_history 라는 테이블에서 관리하는데 해당 테이블을 자동으로 생성해주는 옵션입니다. 기본값은 false로 히스토리 테이블이 이미 존재할 때 사용합니다.
+    url: jdbc:mysql://localhost:3306/boilerplate?useSSL=false&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&useSSL=false
+    user: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    defer-datasource-initialization: false
