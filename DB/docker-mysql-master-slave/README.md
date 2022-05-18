@@ -1,6 +1,13 @@
 Docker MySQL master-slave replication 
 ========================
 
+./build.sh만 실행하면 됩니다.
+init폴더에서 member, order, product 별도 db & table 생성 스크립트가 있어 실행 후,
+dbever 통해서 확인 가능합니다.
+dbever에서 master connection(localhost, 4406, root/qwe123!@#) , slave connection(localhost, 4406, root/qwe123!@#)으로 연결하고 확인 바랍니다.
+
+
+
 MySQL master-slave replication with using Docker. 
 
 ## Run
